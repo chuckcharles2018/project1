@@ -54,10 +54,14 @@ class BusinessContact extends Contact {
 
     }
 }
-class ContactCollect{
-    private Contact contacts;
-    public void addContact(String name, String email,String phoneNumber ){
-     //   ContactCollect[] collection = new ContactCollect[] {String name, email, phoneNumber}
+class ContactCollect extends Contact{
+
+    public ContactCollect(String name, String email) {
+        super(name, email);
+    }
+
+    public void addContact(String name, String email){
+       // String[] collection = new String[Integer.parseInt(name), email];
     }
 
     public void showAll(){
@@ -68,6 +72,8 @@ class ContactCollect{
             BusinessContact businessContact = new BusinessContact("Bryan", "BryanIsAwesome@hotmail.com", "(614) 555-3465");
             Contact contact = new Contact("Bryan", "BryanIsAwesome@hotmail.com");
             businessContact.display();
+            ContactCollect contactCollect = new ContactCollect("Bryan", "BryanIsAwesome@hotmail.com");
+
 
         }
     }
