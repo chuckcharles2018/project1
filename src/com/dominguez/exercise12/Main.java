@@ -5,6 +5,7 @@ class StackFullException extends Exception {}
 class StackEmptyException extends Exception {}
 
 
+
 class Queue<E> {
     private E[] elements;
     private int index = 0;
